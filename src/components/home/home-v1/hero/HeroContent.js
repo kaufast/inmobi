@@ -1,22 +1,26 @@
 "use client";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslations } from "@/i18n"; // Use absolute path
 
 const HeroContent = ({ locale }) => {
   const router = useRouter();
   const t = useTranslations(locale);
   const [activeTab, setActiveTab] = useState("buy");
+  const [tabs, setTabs] = useState([]);
+
+  useEffect(() => {
+    // Update the tabs only when translations are available
+    setTabs([
+      { id: "buy", label: t("tabs.buy") },
+      { id: "rent", label: t("tabs.rent") },
+      { id: "sold", label: t("tabs.sold") },
+    ]);
+  }, [t]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
-  const tabs = [
-    { id: "buy", label: t("tabs.buy") },
-    { id: "rent", label: t("tabs.rent") },
-    { id: "sold", label: t("tabs.sold") },
-  ];
 
   return (
     <div className="advance-search-tab mt70 mt30-md mx-auto animate-up-3">
@@ -45,12 +49,14 @@ const HeroContent = ({ locale }) => {
                     <form className="form-search position-relative">
                       <div className="box-search">
                         <span className="icon flaticon-home-1" />
+                        
                         <input
-                          className="form-control bgc-f7 bdrs12"
-                          type="text"
-                          name="search"
-                          placeholder={`Introduce una dirección, ciudad o código postal para ${tab.label}`}
-                        />
+  className="form-control bgc-f7 bdrs12"
+  type="text"
+  name="search"
+  placeholder={t("placeholder.search").replace("{tabLabel}", tab.label)}
+/>
+
                       </div>
                     </form>
                   </div>
@@ -63,7 +69,8 @@ const HeroContent = ({ locale }) => {
                       data-bs-toggle="modal"
                       data-bs-target="#advanceSeachModal"
                     >
-                      <span className="flaticon-settings" />{t("buttons.advanced")}
+                      <span className="flaticon-settings" />
+                      {t("buttons.advanced")}
                     </button>
                     <button
                       className="advance-search-icon ud-btn btn-thm ms-4"

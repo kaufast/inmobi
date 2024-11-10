@@ -50,6 +50,9 @@
   "ctaTitle": "Need help? Speak to our expert.",
   "ctaText": "Talk to our experts or browse more properties.",
   "contactUs": "Contact Us",
+  "placeholder": {
+    "search": "Enter an address, city, or postal code to {tabLabel}"
+  },
   "blogTags": {
     "Inmobiliaria": "Real Estate",
     "Mejora del Hogar": "Home Improvement",

@@ -1,10 +1,15 @@
-export function useTranslations(locale = "es") { // default to "es"
+export function useTranslations(locale = "es") {
     let messages;
     try {
         messages = require(`./messages/${locale}.json`);
     } catch (error) {
         console.error(`Could not load translations for locale: ${locale}`, error);
-        messages = require(`./messages/es.json`); // Fallback to Spanish if loading fails
+        try {
+            messages = require(`./messages/en.json`);
+        } catch (error) {
+            console.error(`Could not load fallback English translations`, error);
+            messages = require(`./messages/es.json`);
+        }
     }
-    return (key) => key.split('.').reduce((obj, k) => (obj ? obj[k] : key), messages);
+    return (key) => key.split('.').reduce((obj, k) => (obj ? obj[k] : `Missing: ${key}`), messages);
 }
