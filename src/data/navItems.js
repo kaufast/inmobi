@@ -1,27 +1,6 @@
-export const homeItems = [
-  { href: "/", label: "España" },
-  { href: "/mx", label: "México" },
-  { href: "/uk", label: "UK" },
-  { href: "/us", label: "USA" },
 
-];
-
-
-export const listingItems = [
-  {
-    title: "Busqueda",
-    submenu: [
-      { label: "Vista v1", href: "/grid-default" },
-      { label: "Mapa Versión 1", href: "/map-v1" },
-      { label: "Listado Versión 1", href: "/list-v1" },
-    ],
-  },
-  
-  
-]; 
 
 export const propertyItems = [
-
   {
     label: "Admin",
     subMenuItems: [
@@ -37,17 +16,14 @@ export const propertyItems = [
       { label: "Perfil del Agente", href: "/agent-single/1" },
     ],
   },
-  
 ];
 
 export const blogItems = [
-  { href: "/blog-list-v1", label: "Articúlos del Blog" },
+  { href: "/blog-list-v1", label: "Artículos del Blog" },
 ];
 
 export const pageItems = [
   { href: "/contact", label: "Contacto" },
   { href: "/faq", label: "Preguntas Frecuentes" },
   { href: "/about", label: "Acerca de Nosotros" },
-
-  
 ];

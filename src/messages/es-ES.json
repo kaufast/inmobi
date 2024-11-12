@@ -57,5 +57,12 @@
     "Inmobiliaria": "Inmobiliaria",
     "Mejora del Hogar": "Mejora del Hogar",
     "Estilo de Vida": "Estilo de Vida"
+  },
+  "contact": {
+    "formTitle": "¿Tienes preguntas? ¡Ponte en contacto!",
+    "heading": "Nos encantaría saber de ti.",
+    "description": "Estamos aquí para responder cualquier pregunta que puedas tener. Como socio de corporaciones, Realton cuenta con más de 9,000 oficinas de todos los tamaños y con todo el potencial de gestión.",
+    "visitOfficeTitle": "Visita Nuestra Oficina",
+    "visitOfficeDescription": "Cuenta con oficinas con todo el potencial de gestión integral adaptado a tus necesidades."
   }
 }

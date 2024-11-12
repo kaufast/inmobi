@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="es">
+    <html lang="es-ES">
       <body
         className={`body  ${poppins.variable} ${dmSans.variable}`}
         cz-shortcut-listen="false"

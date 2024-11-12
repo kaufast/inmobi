@@ -1,4 +1,3 @@
-// src/app/[locale]/layout.js
 import { useTranslations } from '../../i18n';
 
 export default function LocaleLayout({ children, params }) {

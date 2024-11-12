@@ -6,19 +6,23 @@ import LoginSignupModal from "@/components/common/login-signup-modal";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { useTranslations } from "@/i18n"; // Import translations
 
-const Header = ({ locale }) => {
-  const t = useTranslations(locale); // Fetch translations based on locale
+const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    setNavbar(window.scrollY >= 10);
+    if (window.scrollY >= 10) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
-    return () => window.removeEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
   }, []);
 
   return (
@@ -69,15 +73,13 @@ const Header = ({ locale }) => {
                     role="button"
                   >
                     <i className="far fa-user-circle fz16 me-2" />{" "}
-                    <span className="d-none d-xl-block">
-                      {t("header.myAccount")}
-                    </span>
+                    <span className="d-none d-xl-block">Login / Register</span>
                   </a>
                   <Link
                     className="ud-btn add-property menu-btn bdrs60 mx-2 mx-xl-4"
                     href="/dashboard-add-property"
                   >
-                    {t("header.postProperty")}
+                    Add Property
                     <i className="fal fa-arrow-right-long" />
                   </Link>
                   <a
@@ -92,14 +94,15 @@ const Header = ({ locale }) => {
                       height={9}
                       className="img-1"
                       src="/images/icon/nav-icon-white.svg"
-                      alt="hamburger menu"
+                      alt="humberger menu"
                     />
+
                     <Image
                       width={25}
                       height={9}
                       className="img-2"
                       src="/images/icon/nav-icon-dark.svg"
-                      alt="hamburger menu"
+                      alt="humberger menu"
                     />
                   </a>
                 </div>
@@ -121,14 +124,14 @@ const Header = ({ locale }) => {
           aria-labelledby="loginSignupModalLabel"
           aria-hidden="true"
         >
-          <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+          <div className="modal-dialog  modal-dialog-scrollable modal-dialog-centered">
             <LoginSignupModal />
           </div>
         </div>
       </div>
       {/* End Signup Modal */}
 
-      {/* Desktop Sidebar Menu */}
+      {/* DesktopSidebarMenu */}
       <div
         className="offcanvas offcanvas-end"
         tabIndex="-1"

@@ -1,4 +1,14 @@
 {
+    "header": {
+    "myAccount": "Mi Cuenta",
+    "postProperty": "Publicar Propiedad",
+    "menu": {
+      "countries": "Países",
+      "blog": "Blog",
+      "contact": "Contacto",
+      "admin": "Administrador"
+    }
+  },
   "hero": {
     "subtitle": "The fastest way to find",
     "title": "Your Dream Home",
@@ -12,16 +22,7 @@
   "buttons": {
     "advanced": "Advanced"
   },
-  "header": {
-    "myAccount": "My Account",
-    "postProperty": "Post Property",
-    "menu": {
-      "countries": "Countries",
-      "blog": "Blog",
-      "contact": "Contact",
-      "admin": "Admin"
-    }
-  },
+
   "explore": {
     "buyPropertyTitle": "Buy a Property",
     "sellPropertyTitle": "Sell a Property",
@@ -47,15 +48,35 @@
   "blogSubtitle": "Discover the latest trends in apartments and houses for your ideal home.",
   "newFeatureTitle": "Introducing Our New Feature",
   "newFeatureDescription": "Discover how our new feature can make your property search easier.",
-  "ctaTitle": "Need help? Speak to our expert.",
-  "ctaText": "Talk to our experts or browse more properties.",
   "contactUs": "Contact Us",
   "placeholder": {
     "search": "Enter an address, city, or postal code to {tabLabel}"
   },
-  "blogTags": {
-    "Inmobiliaria": "Real Estate",
-    "Mejora del Hogar": "Home Improvement",
-    "Estilo de Vida": "Lifestyle"
+  "blog": {
+    "fromOurBlog": "From Our Blog",
+    "blogSubtitle": "Discover the latest trends in apartments and houses for your ideal home.",
+    "blogTags": {
+      "Real Estate": "Real Estate",
+      "Home Improvement": "Home Improvement",
+      "Lifestyle": "Lifestyle"
+    },
+    "tag": "Tag",
+    "date": {
+      "month": "Month",
+      "day": "Day"
+    }
+  },
+  "testimonial": {
+    "title": "People Love Living with Inmobi",
+    "quote": "Discover why our clients choose Inmobi to find their ideal home. We take pride in offering an unmatched living experience.",
+    "stars": "Stars",
+    "company": "Company"
+  },
+
+  "cta": {
+    "title": "Need help with properties? Talk to our real estate expert.",
+    "description": "Speak with our real estate experts or browse our available properties.",
+    "contactUs": "Contact Us",
+    "ctaPhoneNumber": "679 680 000"
   }
 }

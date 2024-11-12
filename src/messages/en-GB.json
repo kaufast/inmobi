@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "subtitle": "The fastest way to find",
+    "title": "Your Dream Home",
+    "description": "We have a wide variety of apartments and houses."
+  },
+  "tabs": {
+    "buy": "Buy",
+    "rent": "Rent",
+    "sold": "Sold"
+  },
+  "buttons": {
+    "advanced": "Advanced"
+  },
+  "header": {
+    "myAccount": "My Account",
+    "postProperty": "Post Property",
+    "menu": {
+      "countries": "Countries",
+      "blog": "Blog",
+      "contact": "Contact",
+      "admin": "Admin"
+    }
+  },
+  "explore": {
+    "buyPropertyTitle": "Buy a Property",
+    "sellPropertyTitle": "Sell a Property",
+    "rentPropertyTitle": "Rent a Property",
+    "exclusiveAgents": "Exclusive Agents",
+    "findHome": "Find a Home",
+    "postAd": "Post an Ad",
+    "findRental": "Find a Rental"
+  },
+  "welcomeMessage": "Welcome to Inmobi!",
+  "inspireText": "Get inspired by our wide selection of over 1800 properties suited for every lifestyle.",
+  "exploreApartmentTypes": "Explore Apartment Types",
+  "howInmobiCanHelp": "Discover How Inmobi Can Help You",
+  "personalizedSolutions": "At Inmobi, we offer personalized solutions for buying, selling, or renting properties. Our expert team is here to guide you at every step.",
+  "featuredProperties": "Discover Our Featured Properties",
+  "uniquePropertySelection": "Explore a unique selection of properties designed to inspire your next investment.",
+  "propertiesByCity": "Properties by City",
+  "citySelection": "Discover our top properties in Spain's major cities and find the perfect location for you.",
+  "viewAllCities": "View all cities",
+  "testimonialsTitle": "People Love Living with Inmobi",
+  "testimonialsSubtitle": "Discover why our clients choose Inmobi to find their ideal home. We are proud to offer an incomparable living experience.",
+  "fromOurBlog": "From Our Blog",
+  "blogSubtitle": "Discover the latest trends in apartments and houses for your ideal home.",
+  "newFeatureTitle": "Introducing Our New Feature",
+  "newFeatureDescription": "Discover how our new feature can make your property search easier.",
+  "ctaTitle": "Need help? Speak to our expert.",
+  "ctaText": "Talk to our experts or browse more properties.",
+  "contactUs": "Contact Us",
+  "placeholder": {
+    "search": "Enter an address, city, or postal code to {tabLabel}"
+  },
+  "blogTags": {
+    "Inmobiliaria": "Real Estate",
+    "Mejora del Hogar": "Home Improvement",
+    "Estilo de Vida": "Lifestyle"
+  },
+  "contact": {
+    "formTitle": "Have questions? Get in touch!",
+    "heading": "We'd love to hear from you.",
+    "description": "We're here to answer any questions you may have. As a corporate partner, Inmobi has over 9,000 offices of all sizes with comprehensive management potential.",
+    "visitOfficeTitle": "Visit Our Office",
+    "visitOfficeDescription": "We offer offices with comprehensive management potential tailored to your needs."
+  }
+}
