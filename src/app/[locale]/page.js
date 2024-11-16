@@ -1,5 +1,4 @@
-"use client";
-
+// src/app/[locale]/page.js
 import Explore from "@/components/common/Explore";
 import Footer from "@/components/common/default-footer";
 import MobileMenu from "@/components/common/mobile-menu";
@@ -13,35 +12,27 @@ import Testimonial from "@/components/home/home-v1/Testimonial";
 import Hero from "@/components/home/home-v1/hero";
 import Image from "next/image";
 import Blog from "@/components/common/Blog";
-import PopulerProperty from "@/components/home/home-v1/PopulerProperty";
 import Link from "next/link";
+import PopulerProperty from "@/components/home/home-v1/PopulerProperty";
 import { useTranslations } from '../../i18n';
-import { useEffect, useState } from "react";
+
+export const metadata = {
+  title: "Inmobi - ¡Bienvenido! El Mejor Socio para Bienes Raíces",
+  description: "Explora nuestras propiedades destacadas y encuentra la casa de tus sueños en España con Inmobi.",
+};
 
 const HomePage = ({ params }) => {
-  // Set locale with a fallback
-  const locale = params?.locale || "es-ES";
-  const t = useTranslations(locale);
-
-  // State to ensure client-side rendering is consistent after hydration
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    // Indicate that the component has mounted
-    setIsMounted(true);
-  }, []);
-
-  // Avoid rendering until after the component has fully mounted to prevent mismatches
-  if (!isMounted) return null;
+  const locale = params.locale || "es"; // Default to Spanish if locale not provided
+  const t = useTranslations(locale); // Load translations based on locale
 
   return (
     <>
       {/* Main Header Nav */}
-      <Header  />
+      <Header locale={locale} />
       {/* End Main Header Nav */}
 
       {/* Mobile Nav */}
-      <MobileMenu locale={locale} />
+      <MobileMenu />
       {/* End Mobile Nav */}
 
       {/* Home Banner Style V1 */}
